@@ -92,6 +92,9 @@ main {
     }
 
     & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: var(--color-brand);
       border-radius: var(--radius-md);
       padding: var(--spacing-sm) var(--spacing-lg);
@@ -193,4 +196,122 @@ main {
 
 .appear {
   display: flex !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 0 var(--spacing-sm) var(--spacing-md) var(--spacing-sm);
+  }
+
+  header {
+    padding: var(--spacing-md);
+  }
+
+  main {
+    & h1 {
+      font-size: 1.5rem;
+    }
+
+    & form {
+      flex-direction: column;
+      gap: var(--spacing-md);
+
+      & input {
+        font-size: 16px; /* Prevents zoom on iOS */
+        min-height: 44px; /* Touch target size */
+      }
+
+      & button {
+        width: 100%;
+        min-height: 44px;
+        padding: var(--spacing-md);
+      }
+    }
+
+    & li {
+      padding: var(--spacing-md);
+      flex-wrap: wrap;
+      gap: var(--spacing-sm);
+
+      & .item-checkbox {
+        flex: 1 1 auto;
+        justify-content: flex-start;
+      }
+
+      & .item-checkbox label {
+        word-break: break-word;
+        font-size: 0.95rem;
+      }
+
+      & .delete-btn {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    & .delete-info {
+      gap: var(--spacing-sm);
+      padding: var(--spacing-md);
+
+      & .warning-info {
+        width: 100%;
+        justify-content: flex-start;
+
+        & p {
+          font-size: 0.9rem;
+        }
+      }
+
+      & button {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 var(--spacing-xs) var(--spacing-sm) var(--spacing-xs);
+  }
+
+  header {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  main {
+    & h1 {
+      font-size: 1.25rem;
+      margin: 0.75rem 0;
+    }
+
+    & form {
+      & input {
+        font-size: 16px;
+        padding: var(--spacing-md);
+      }
+
+      & button {
+        font-size: 0.9rem;
+      }
+    }
+
+    & li {
+      padding: var(--spacing-md);
+      margin-top: var(--spacing-sm);
+    }
+
+    & .delete-info {
+      margin-top: var(--spacing-lg);
+
+      & .warning-info {
+        & img {
+          min-width: 20px;
+        }
+      }
+    }
+  }
 }
