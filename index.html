@@ -13,31 +13,106 @@
     />
   </head>
   <body>
-    <header><img src="./assets/logo.svg" alt="Logo" /></header>
+    <!-- Header -->
+    <header>
+      <img src="./assets/logo.svg" alt="Logo Quicklist" />
+    </header>
+
+    <!-- Main Content -->
     <main>
-      <a href="#" id="back-link"><- Voltar</a>
+      <!-- Navigation -->
+      <nav>
+        <a href="/" class="back-link"><- Voltar</a>
+      </nav>
+
+      <!-- Title -->
       <h1>Compras da Semana</h1>
-      <form action="">
+
+      <!-- Add Item Form -->
+      <form>
         <input
           type="text"
-          name="item-name"
           id="item-name"
           placeholder="Adicione um novo item"
+          aria-label="Nome do item"
+          required
         />
-        <button type="submit">Adicionar item</button>
+        <button type="submit" aria-label="Adicionar novo item">
+          Adicionar item
+        </button>
       </form>
-      <ul>
+
+      <!-- Items List -->
+      <ul id="item-list">
         <li>
           <div class="item-checkbox">
-            <input type="checkbox" name="item-1" />
-            <p>Pão de Forma</p>
+            <input
+              type="checkbox"
+              id="item-pao"
+              aria-label="Marcar pão de forma como concluído"
+            />
+            <label for="item-pao">Pão de forma</label>
           </div>
-          <button id="delete-btn">
-            <img src="./assets/trash.svg" alt="Excluir item" />
+          <button class="delete-btn" aria-label="Remover pão de forma">
+            <img src="./assets/trash.svg" alt="" />
+          </button>
+        </li>
+
+        <li>
+          <div class="item-checkbox">
+            <input
+              type="checkbox"
+              id="item-cafe"
+              aria-label="Marcar café preto como concluído"
+            />
+            <label for="item-cafe">Café Preto</label>
+          </div>
+          <button class="delete-btn" aria-label="Remover café preto">
+            <img src="./assets/trash.svg" alt="" />
+          </button>
+        </li>
+
+        <li>
+          <div class="item-checkbox">
+            <input
+              type="checkbox"
+              id="item-bolacha"
+              aria-label="Marcar bolacha como concluído"
+            />
+            <label for="item-bolacha">Bolacha</label>
+          </div>
+          <button class="delete-btn" aria-label="Remover bolacha">
+            <img src="./assets/trash.svg" alt="" />
+          </button>
+        </li>
+
+        <li>
+          <div class="item-checkbox">
+            <input
+              type="checkbox"
+              id="item-suco"
+              aria-label="Marcar suco de laranja como concluído"
+            />
+            <label for="item-suco">Suco de Laranja</label>
+          </div>
+          <button class="delete-btn" aria-label="Remover suco de laranja">
+            <img src="./assets/trash.svg" alt="" />
           </button>
         </li>
       </ul>
+
+      <!-- Delete Notification -->
+      <aside class="delete-info" role="status" aria-live="polite">
+        <div class="warning-info">
+          <img src="./assets/warning-circle-filled.svg" alt="" />
+          <p></p>
+        </div>
+        <button class="delete-info-close" aria-label="Fechar notificação">
+          <img src="./assets/delete-small.svg" alt="" />
+        </button>
+      </aside>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
