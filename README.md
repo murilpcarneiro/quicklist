@@ -2,7 +2,9 @@
 
 Uma aplicação web responsiva e acessível para gerenciar listas de compras de forma rápida e intuitiva.
 
-## ✨ Features
+## 🌐 Demo Live
+
+Confira o projeto em ação: **[Quicklist - Live Demo](https://murilpcarneiro.github.io/quicklist/)**
 
 - ✅ **Adicionar itens** - Adicione novos itens à lista com validação de campos vazios
 - ✅ **Marcar como concluído** - Clique no checkbox para marcar itens como concluídos (com riscado)
@@ -69,15 +71,15 @@ Acesse `http://localhost:8000`
 
 ## 🎨 Paleta de Cores
 
-| Variável | Cor | Uso |
-|----------|-----|-----|
-| `--background-primary` | `#F4F5FB` | Fundo da página |
-| `--background-secondary` | `#FFFFFF` | Fundo dos itens |
-| `--color-brand` | `#CA3884` | Cor primária (botão, checkbox) |
-| `--color-brand-hover` | `#A52C6B` | Hover da cor primária |
-| `--color-danger` | `#C93847` | Cor de alerta (notificação) |
-| `--content-primary` | `#080B12` | Texto principal |
-| `--border-primary` | `#D1D5DB` | Borda padrão |
+| Variável                 | Cor       | Uso                            |
+| ------------------------ | --------- | ------------------------------ |
+| `--background-primary`   | `#F4F5FB` | Fundo da página                |
+| `--background-secondary` | `#FFFFFF` | Fundo dos itens                |
+| `--color-brand`          | `#CA3884` | Cor primária (botão, checkbox) |
+| `--color-brand-hover`    | `#A52C6B` | Hover da cor primária          |
+| `--color-danger`         | `#C93847` | Cor de alerta (notificação)    |
+| `--content-primary`      | `#080B12` | Texto principal                |
+| `--border-primary`       | `#D1D5DB` | Borda padrão                   |
 
 ## ♿ Acessibilidade
 
@@ -90,20 +92,22 @@ Acesse `http://localhost:8000`
 
 ## 📱 Responsividade
 
-| Breakpoint | Mudanças |
-|-----------|----------|
-| **768px** | Formulário em coluna; botão 100% da largura |
-| **480px** | Padding reduzido; fontes menores; otimizado para toque |
+| Breakpoint | Mudanças                                               |
+| ---------- | ------------------------------------------------------ |
+| **768px**  | Formulário em coluna; botão 100% da largura            |
+| **480px**  | Padding reduzido; fontes menores; otimizado para toque |
 
 ## 🔄 Refatorações Implementadas
 
 ### CSS
+
 - ✅ Variáveis de spacing e border-radius
 - ✅ Transições suaves em hover/focus
 - ✅ Media queries para responsividade
 - ✅ Organização modular e manutenível
 
 ### JavaScript
+
 - ✅ Funções reutilizáveis e bem documentadas
 - ✅ Delegação de eventos (melhor performance)
 - ✅ IDs dinâmicos com `Date.now()`
@@ -111,6 +115,7 @@ Acesse `http://localhost:8000`
 - ✅ Separação de responsabilidades
 
 ### HTML
+
 - ✅ Semântica HTML5 (`<nav>`, `<aside>`, `<label>`)
 - ✅ ARIA labels para acessibilidade
 - ✅ Comentários nas seções principais
