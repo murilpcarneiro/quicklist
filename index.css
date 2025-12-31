@@ -107,6 +107,12 @@ main {
     align-items: center;
     justify-content: space-between;
 
+    & button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
     & .item-checkbox {
       display: flex;
       align-items: center;
